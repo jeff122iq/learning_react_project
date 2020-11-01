@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App > .pageHeader {
+  width: 100%;
+  padding: 10px 0;
+  background-color: brown;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+}
+
+.App > .pageHeader > .container {
+  width: 100%;
+  padding: 5px 0;
+  margin: 0 200px;
+  background-color: chartreuse;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.App > .content > .siteBar {
+  width: 100%;
+  max-width: 400px;
+  height: 100vh;
+  background-color: cyan;
+  margin: 0 10px;
+}
+
+.App > .content > .siteBar > ol {
+  border-bottom: 3px solid white;
+}
+
+.App > .content > .siteBar > ol > li {
+  background-color: white;
+  padding: 5px 10px;
+  margin: 5px 0;
+}
+
+.App > .content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.App > .content > .todoList {
+  width: 100%;
+  height: 100vh;
+  background-color: darkcyan;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 10px;
+}
+
+.App > .content > .todoList > h1 {
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  text-transform: uppercase;
+  border: 3px solid white;
+  padding: 10px 20px;
 }
